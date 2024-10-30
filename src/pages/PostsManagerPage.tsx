@@ -312,7 +312,7 @@ const PostsManager = () => {
     } else {
       fetchPosts()
     }
-    updateURL()
+    // updateURL()
   }, [skip, limit, sortBy, sortOrder, selectedTag])
 
   useEffect(() => {
@@ -371,7 +371,7 @@ const PostsManager = () => {
                       }`}
                       onClick={() => {
                         setSelectedTag(tag)
-                        updateURL()
+                        // updateURL()
                       }}
                     >
                       {tag}
@@ -500,7 +500,7 @@ const PostsManager = () => {
               onValueChange={(value) => {
                 setSelectedTag(value)
                 fetchPostsByTag(value)
-                updateURL()
+                // updateURL()
               }}
             >
               <SelectTrigger className="w-[180px]">
